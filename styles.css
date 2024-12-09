@@ -1,0 +1,621 @@
+/* Reset margin, padding, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #f7f8fa;
+  color: #333;
+  line-height: 1.6;
+}
+/* Center Container */
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Card for Login/Register */
+.auth-card,
+.upload-card {
+  width: 350px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.login-title {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Auth Form Input Styling */
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Button Styling */
+.button,
+.upload-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover,
+.upload-button:hover {
+  background-color: #ff9070;
+}
+
+/* Tombol Favorite */
+.favorite-btn {
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #ff6f61, #ff9070);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Efek hover untuk tombol Favorite */
+.favorite-btn:hover {
+  background: linear-gradient(45deg, #ff9070, #ff6f61);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Efek saat tombol di klik */
+.favorite-btn:active {
+  transform: translateY(2px); /* Menurunkan tombol sedikit saat di klik */
+}
+
+/* Gaya untuk tombol Unfavorite */
+.favorite-btn.unfavorite {
+  background: linear-gradient(45deg, #e53935, #d32f2f);
+}
+
+/* Efek hover untuk tombol Unfavorite */
+.favorite-btn.unfavorite:hover {
+  background: linear-gradient(45deg, #d32f2f, #e53935);
+}
+
+/* Ikon untuk tombol */
+.favorite-btn .icon {
+  font-size: 20px;
+}
+
+/* Tombol Edit */
+.btn-edit {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+/* Efek hover untuk tombol Edit */
+.btn-edit:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Efek saat tombol di klik */
+.btn-edit:active {
+  transform: translateY(2px); /* Menurunkan tombol sedikit saat di klik */
+}
+
+/* Tombol Delete */
+.btn-delete {
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+/* Efek hover untuk tombol Delete */
+.btn-delete:hover {
+  background-color: #e53935;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Efek saat tombol di klik */
+.btn-delete:active {
+  transform: translateY(2px); /* Menurunkan tombol sedikit saat di klik */
+}
+
+/* Register Link */
+.register-link {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.register-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+/* Reset margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Menata kontainer logo */
+.logo-container {
+  display: flex;
+  align-items: center; /* Menyelaraskan logo dan teks secara vertikal */
+}
+
+.logo-container h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.logo-image {
+  margin-right: 10px; /* Memberikan jarak antara logo dan teks */
+  width: 80px; /* Ukuran logo */
+  height: 80px; /* Ukuran logo */
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start; /* Menyelaraskan konten navbar ke kiri */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ff6f61;
+}
+
+/* Sticky Navbar */
+.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+/* Navbar Links */
+.containerr {
+  display: flex;
+  justify-content: space-between; /* Membuat logo di kiri dan link di kanan */
+  align-items: center;
+  width: 100%; /* Pastikan container mengisi lebar penuh */
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between; /* Membuat logo di kiri dan link di kanan */
+  align-items: center;
+  width: 100%; /* Pastikan container mengisi lebar penuh */
+}
+
+.navbar h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0; /* Menghapus margin default dari h1 */
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #ffe4e1;
+}
+/* Recipes Container */
+.recipes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+}
+
+.recipe-card {
+  width: 30%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.recipe-card:hover {
+  transform: scale(1.05);
+}
+
+.recipe-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.recipe-description {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  background-image: linear-gradient(to bottom, #ff6f61, #ff9070);
+  color: white;
+  padding: 80px 20px;
+  margin-bottom: 30px;
+}
+
+.hero-section h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.hero-section p {
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+/* Recipes Container */
+.recipes-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+/* Recipe Card */
+.recipe-card {
+  width: 30%; /* Set width to allow 3 cards per row */
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.recipe-card:hover {
+  transform: scale(1.05);
+}
+
+.recipe-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.recipe-time {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.recipe-description {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Container untuk Detail Resep */
+.recipe-detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.recipe-detail-card {
+  max-width: 600px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+}
+
+.recipe-title {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.recipe-detail-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.recipe-steps {
+  text-align: left;
+  margin: 20px 0;
+}
+
+.recipe-detail h1 {
+  font-size: 28px;
+  color: #ff6f61;
+  margin-bottom: 10px;
+}
+
+.recipe-detail p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Tombol Kembali */
+.back-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #ff9070;
+}
+
+.view-button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #ff6f61;
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.view-button:hover {
+  background-color: #ff9070;
+}
+
+/* Upload Recipe Container */
+.upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f7fa;
+  padding: 20px;
+}
+
+.upload-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.upload-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.upload-form .form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.upload-form label {
+  display: block;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.upload-form input[type="text"],
+.upload-form input[type="file"],
+.upload-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fafafa;
+  transition: border-color 0.3s ease;
+}
+
+.upload-form input[type="text"]:focus,
+.upload-form input[type="file"]:focus,
+.upload-form textarea:focus {
+  border-color: #ff9070;
+  outline: none;
+}
+
+.upload-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+  background-color:red;
+}
+
+/* Tombol Cancel */
+.cancel-button {
+  display: inline-block;
+  width: 100%;
+  padding: 12px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.cancel-button:hover {
+  background-color: red;
+}
+
+/* Footer */
+.footer {
+  background-color: #ff9070;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.footer-about,
+.footer-links,
+.footer-social {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-about h3,
+.footer-links h4,
+.footer-social h4 {
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #222;
+}
+
+.footer-social a {
+  margin-right: 10px;
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.footer-social a:hover {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  background-color: #e53935;
+  color: #bbb;
+  padding: 10px 0;
+  margin-top: 20px;
+}

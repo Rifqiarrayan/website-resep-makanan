@@ -1,0 +1,88 @@
+/* Set font keluarga default dan buat margin serta padding body 0 */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Menambah kontainer untuk menempatkan form di tengah layar */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Menata form edit dengan background dan border */
+.edit-form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Membuat heading lebih menonjol */
+.edit-form h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Menata setiap elemen form */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Penataan label */
+.form-group label {
+    display: block;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* Menata input text dan textarea */
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease;
+}
+
+/* Menambahkan efek hover dan focus */
+input[type="text"]:focus, textarea:focus {
+    border-color: #ff9070;
+    outline: none;
+}
+
+/* Menata button */
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color:#ff9070;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Menambahkan efek hover pada tombol */
+.btn-submit:hover {
+    background-color: #ff9070;
+}
+
+/* Menambahkan margin untuk form-group terakhir */
+.form-group:last-child {
+    margin-bottom: 0;
+}

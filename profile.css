@@ -1,0 +1,177 @@
+/* Reset default margin dan padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Membuat jarak antara logo dan link */
+  align-items: center; /* Menyelaraskan item secara vertikal */
+  padding: 10px 20px;
+  background-color: #ff6f61;
+}
+
+/* Flex container untuk logo dan menu link */
+.containerr {
+  display: flex;
+  justify-content: space-between; /* Memastikan elemen terpisah dengan jarak */
+  width: 100%; /* Pastikan container mengisi lebar penuh */
+  align-items: center; /* Menjaga agar logo dan link sejajar secara vertikal */
+}
+
+/* Styling untuk logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-container .brand-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Navbar links */
+.nav-links {
+  display: flex;
+  gap: 20px; /* Jarak antara setiap link */
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #ffe4e1;
+}
+
+.profile-container {
+  max-width: 900px; /* Membuat card lebih lebar */
+  margin: 40px auto; /* Sentris secara horizontal */
+  background: white;
+  padding: 30px; /* Menambah ruang dalam card */
+  border-radius: 15px; /* Membuat sudut card lebih halus */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Menambahkan shadow lebih lembut */
+}
+
+/* Header profile dengan layout lebih proporsional */
+.profile-header {
+  display: flex;
+  align-items: center; /* Mengatur elemen sejajar secara vertikal */
+  gap: 30px; /* Menambah jarak antar elemen */
+}
+
+/* Styling untuk foto profil */
+.profile-photo img {
+  width: 150px; /* Ukuran foto lebih besar */
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #ff6f61; /* Border lebih tegas */
+  object-fit: cover; /* Pastikan foto tidak terdistorsi */
+}
+
+/* Informasi profil */
+.profile-info {
+  flex: 1; /* Membuat bagian ini fleksibel */
+  color: #555; /* Warna teks lebih lembut */
+}
+
+.profile-info p {
+  margin: 8px 0; /* Jarak antar teks */
+  font-size: 16px; /* Ukuran teks sedang */
+  line-height: 1.5; /* Jarak antar baris */
+}
+
+.profile-info strong {
+  color: #333; /* Teks kuat lebih gelap */
+}
+
+.edit-profile-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px; /* Ukuran teks lebih besar */
+  font-weight: bold;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 10px; /* Sudut tombol lebih bulat */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-profile-btn:hover {
+  background-color: #d94f4f; /* Warna hover lebih gelap */
+}
+
+/* Formulir edit profil */
+.profile-form {
+  margin-top: 30px; /* Jarak dari header */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #333;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px; /* Jarak dari label */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: none;
+}
+
+.btn-submit {
+  width: 100%; /* Tombol selebar formulir */
+  padding: 12px;
+  font-size: 16px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #d94f4f;
+}
+
+/* Bagian Resep Favorit */
+.favorite-recipes {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.favorite-recipes h2 {
+  font-size: 22px;
+  color: #ff6f61;
+  margin-bottom: 15px;
+}
